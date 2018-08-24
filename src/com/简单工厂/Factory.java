@@ -1,6 +1,8 @@
 package com.简单工厂;
 
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.net.InterfaceAddress;
 import java.util.Properties;
 
 /**
@@ -42,12 +44,17 @@ public class Factory {
         }
         Api api = null;
         try{
-            api = (Api)Class.forName(p.getProperty("ImplClass")).newInstance();
+            api = (Api) Class.forName(p.getProperty("ImplClass")).getConstructor().newInstance();
+            //api = (Api)Class.forName("ImplA").getConstructor().newInstance();
         }catch(InstantiationException e){
             e.printStackTrace();
         }catch (IllegalAccessException e){
             e.printStackTrace();
         }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }catch (NoSuchMethodException e){
+            e.printStackTrace();
+        }catch(InvocationTargetException e){
             e.printStackTrace();
         }
         return api;
