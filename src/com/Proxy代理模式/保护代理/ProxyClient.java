@@ -1,4 +1,4 @@
-package com.代理模式.保护代理;
+package com.Proxy代理模式.保护代理;
 
 /**
  * @ClassName ProxyClient
