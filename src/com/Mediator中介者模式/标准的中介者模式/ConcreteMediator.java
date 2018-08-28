@@ -1,4 +1,4 @@
-package com.Mediator中介者模式;
+package com.Mediator中介者模式.标准的中介者模式;
 
 /**
  * @ClassName ConcreteMediator

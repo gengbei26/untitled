@@ -1,8 +1,8 @@
-package com.Mediator中介者模式;
+package com.Mediator中介者模式.标准的中介者模式;
 
 /**
  * @ClassName MediatorClient
- * @Description TODO
+ * @Description 标准的中介者模式，限制太多，不太推荐
  * @Author deus
  * @Data 2018/8/27 11:21
  * @Version 1.0
