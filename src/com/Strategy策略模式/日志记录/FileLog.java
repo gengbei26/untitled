@@ -7,9 +7,9 @@ package com.Strategy策略模式.日志记录;
  * @Data 2018/9/25 11:15
  * @Version 1.0
  **/
-public class FileLog implements ILogStrategy {
+public class FileLog extends LogStrategyTemplate {
     @Override
-    public void Log(String msg) {
+    public void doLog(String msg) {
         System.out.println("现在把'" + msg + "'记录到，文件中。。");
     }
 }
