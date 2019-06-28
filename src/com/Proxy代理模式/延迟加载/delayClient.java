@@ -11,6 +11,7 @@ public class delayClient {
     public static void main(String[] args) {
         IDBQuery iq = new DBQueryProxy();
         System.out.println("初始化DBQueryProxy");
+        ///////////////////////////////////
         System.out.println("开始执行DBQuery");
         String res = iq.request();
         System.out.println(res);
